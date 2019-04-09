@@ -11,6 +11,12 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 `
 
+const Paragraph = styled.p`
+  font-family: "Space Text", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+`
+
 const Wrapper = styled.div`
   padding: 1rem;
   @media (min-width: 800px) {
@@ -19,13 +25,16 @@ const Wrapper = styled.div`
   }
 `
 
-const Work = () => (
+const Thanks = () => (
   <Layout>
-    <SEO title="Work" />
+    <SEO title="Thanks" />
     <Wrapper>
-      <Title>Coming soon...</Title>
+      <Title>Thanks</Title>
+      <Paragraph>
+        I've received your message and I will be in contact shortly!
+      </Paragraph>
     </Wrapper>
   </Layout>
 )
 
-export default Work
+export default Thanks

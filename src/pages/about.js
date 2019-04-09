@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Title = styled.h1`
@@ -26,6 +27,7 @@ const Wrapper = styled.div`
 
 const About = () => (
   <Layout>
+    <SEO title="About" />
     <Wrapper>
       <Title>About</Title>
       <Paragraph>Hello, my name is Connor.</Paragraph>

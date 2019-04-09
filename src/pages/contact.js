@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Title = styled.h1`
@@ -68,11 +69,13 @@ const Wrapper = styled.div`
 
 const Contact = () => (
   <Layout>
+    <SEO title="Contact" />
     <Wrapper>
       <Title>Contact</Title>
       <form
         name="contact"
-        method="POST"
+        method="post"
+        action="/thanks"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
